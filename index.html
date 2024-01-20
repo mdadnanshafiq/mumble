@@ -30,7 +30,7 @@
     <header class="bg-[#FFFBF0] py-8 px-4 md:px-32">
         <!-- nav section -->
         <nav>
-            <div class="nav1 flex justify-between items-center pb-8">
+            <div class="lg:hidden nav1 flex justify-between items-center pb-8">
                 <div class="logo w-52 h-auto">
                     <a href=""><img src="icons/logo.png" alt=""></a>
                 </div>
@@ -38,19 +38,29 @@
                     <span><i class="fa-solid fa-bars"></i></span>
                 </div>
             </div>
-            <div class="nav2">
-
+            <div class="nav2 hidden md:hidden lg:flex justify-between items-center">
+                <div class="w-80 h-auto">
+                    <img src="icons/logo.png" alt="logo">
+                </div>
+                <div>
+                    <ul class="flex justify-center items-center gap-14">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Product</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- banner section -->
-        <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="space-y-3">
+        <div class="flex flex-col md:flex-row justify-between lg:justify-between  items-center">
+            <div class="space-y-3 lg:space-y-10 lg:ml-8">
                 <h1 class="text-6xl lg:text-7xl uppercase font-bebas">
                     <span class="text-[#FABE4C] ">Be the Penguins</span>
-                    <br>
+                    <br class="lg:hidden">
                     <span class="text-[#363958]">of Winter</span>
                 </h1>
-                <p class="text-[#363958] font-roboto">Lorem Ipsum is simply dummy text of the
+                <p class="text-[#363958] font-roboto max-w-80 lg:max-w-full ">Lorem Ipsum is simply dummy text of the
                     printing and typesetting industry.</p>
                 <button
                     class="py-4 px-9 bg-gradient-to-r from-[#A4BC46] to-[#85A019] rounded-xl uppercase text-white font-medium">
@@ -61,7 +71,7 @@
                     </svg>
                     Buy Now</button>
             </div>
-            <div>
+            <div class="lg:ml-8">
                 <img class="mt-16" src="images/model.png" alt="model">
             </div>
         </div>
@@ -69,9 +79,9 @@
     <main class="max-w-7xl mx-auto">
         <!-- women jackets section -->
         <section class="py-12 ">
-            <h3 class="text-4xl font-bebas text-[#363958] text-center mb-8">Woman Jackets</h3>
+            <h3 class="text-4xl font-bebas text-[#363958] text-center lg:text-left mb-8">Woman Jackets</h3>
             <!-- jackets container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto md:flex md:flex-wrap md:justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto md:flex md:flex-wrap lg:flex-nowrap md:justify-center">
                 <!-- jacket 1 -->
                 <div class="md:basis-[45%] space-y-3 shadow-lg p-8 rounded-3xl mx-2">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl mx-auto">
@@ -136,9 +146,9 @@
         </section>
         <!-- men jackets section -->
         <section class="py-12">
-            <h3 class="text-4xl font-bebas text-[#363958] text-center mb-8">Man Jackets</h3>
+            <h3 class="text-4xl font-bebas text-[#363958] text-center lg:text-left mb-8">Man Jackets</h3>
             <!-- jackets container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto md:flex md:flex-wrap md:justify-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 font-roboto md:flex md:flex-wrap md:justify-center  lg:flex-nowrap">
                 <!-- jacket 1 -->
                 <div class="md:basis-[45%] space-y-3 shadow-lg p-8 rounded-3xl mx-2">
                     <div class="bg-[#F1F1F1] p-5 rounded-2xl mx-auto">
@@ -201,10 +211,10 @@
                 </div>
             </div>
         </section>
-        <section class="feature flex flex-col-reverse justify-center items-center gap-12 mx-4 my-8">
+        <section class="feature flex flex-col-reverse lg:flex-row justify-center items-center gap-12 mx-4 my-8">
             <!-- feature content -->
-            <div class="flex flex-col md:flex-row justify-center items-center text-center gap-12 md:gap-6">
-                <div class="shadow-md p-4 rounded-2xl w-80 md:w-60 h-auto md:h-80">
+            <div class="flex flex-col md:flex-row lg:flex-col justify-center items-center text-center gap-12 md:gap-6">
+                <div class="shadow-md p-4 rounded-2xl w-80 md:w-60 h-auto md:h-80 lg:flex  lg:w-[30.5rem] lg:h-36 lg:justify-between lg:items-start lg:text-left lg:gap-9">
                     <div class="w-20 h-20 mx-auto my-5">
                         <img src="icons/house.png" alt="house">
                     </div>
@@ -214,7 +224,7 @@
                             offer styles for every body.</p>
                     </div>
                 </div>
-                <div class="shadow-md p-4 rounded-2xl w-80 md:w-60 md:h-80 h-auto">
+                <div class="shadow-md p-4 rounded-2xl w-80 md:w-60 md:h-80 h-auto lg:flex  lg:w-[30.5rem] lg:h-36 lg:justify-between lg:items-start lg:text-left lg:gap-9">
                     <div class="w-20 h-20 mx-auto my-8">
                         <img src="icons/box.png" alt="box">
                     </div>
@@ -224,7 +234,7 @@
                             with peace of mind.</p>
                     </div>
                 </div>
-                <div class="shadow-md p-4 rounded-2xl w-80 md:w-60  md:h-80 h-auto">
+                <div class="shadow-md p-4 rounded-2xl w-80 md:w-60  md:h-80 h-auto lg:flex  lg:w-[30.5rem] lg:h-36 lg:justify-between lg:items-start lg:text-left lg:gap-9">
                     <div class="w-20 h-20 mx-auto my-5">
                         <img src="icons/question.png" alt="question">
                     </div>
@@ -237,7 +247,7 @@
             </div>
             <!-- feature view -->
             <div>
-                <img class="w-3/4 mx-auto" src="images/shopping.png" alt="">
+                <img class="w-3/4 lg:w-full mx-auto" src="images/shopping.png" alt="">
             </div>
         </section>
     </main>
